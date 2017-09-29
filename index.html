@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<style type="text/css">
+		body {
+
+			font-family: 'Noto Sans', Helvetica, sans-serif;
+		}
+
+		#refbg {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			background: url('./резюме.png');
+			opacity: 0.35;
+			left: 0px;
+			top: 0px;
+
+			display:none;
+		}
+
+		#cv-header {
+			width: 560px;
+			position: relative;
+			left: 50%;
+			margin-left: -565px;
+			margin-top: 180px;
+			padding: 0 0 60px 0;
+		}
+
+		#cv-header p {
+			margin-bottom: 0px;
+			margin-top: 0px;
+		}
+
+		#cv-header .name {
+			font-size: 30px;
+			font-weight: bold;
+		}
+
+		#cv-header .position {
+			font-size: 18px;
+		}
+
+		#cv-header .location {
+			font-size: 16px;
+
+		}
+		
+		#cv-header > a {
+			display: block;
+			color: #0057ff;
+			font-size: 16px;
+			text-decoration: none;
+			line-height: 1.4;
+		}
+
+		#cv-header > img {
+			display: block;
+			float: right;
+		}
+
+		#cv {
+			width: 1130px;
+			left: 50%;
+			margin-left: -565px;
+			position: relative;
+		}
+
+		#cv .row {
+			border-top: 1px #333 solid;
+			padding: 8px 0 65px 0;
+			width: 100%;
+		}
+
+		#cv .row > p {}
+
+		#cv .row > .type {
+			width: 232px;
+			height: 100%;
+			float: left;
+			text-transform: uppercase;
+			font-size: 14px;
+			padding: 10px 0;
+			letter-spacing: 0.03em;
+			font-weight: bold;
+
+		}
+
+		#cv .row > .details p {
+			margin: 0;
+			padding: 0;
+			margin-bottom: 13px;
+		}
+
+		#cv .row > .details {
+			padding: 7px 0 30px 0;
+			margin-left: 284px;
+			border-bottom: 1px solid #b7b7b7;
+		}
+
+		#cv .row > .details:last-child {
+			border-bottom: none;
+		}
+		
+		#cv .row > .details > .title {
+			font-size: 20px;
+			margin: 0;
+			font-weight: bold;
+		}
+
+		#cv .row > .details > .position {
+			font-size: 20px;
+		}
+
+		#cv .row .text {
+			font-size: 18px;
+			line-height: 27px;
+		}
+
+		#cv .row .text li {
+			margin-bottom: 10px;
+		}
+
+		#cv .row > .details > .subline {
+			font-size: 18px;
+			color: #b7b7b7;
+		}
+
+		#cv .row > .details > .subline > span {
+			display: inline-block;
+			border-right: 1px #b7b7b7 solid;
+			padding: 0 10px;
+		}
+
+		#cv .row > .details > .subline > span:first-child {
+			padding-left: 0;
+		}
+
+		#cv .row > .details > .subline > span:last-child {
+			border-right: none;
+		}
+
+		#cv .row > .details > .position > span {
+			display: inline-block;
+			border-right: 1px black solid;
+			padding: 0 10px;
+		}
+
+		#cv .row > .details > .position > span:first-child {
+			padding-left: 0;
+		}
+
+		#cv .row > .details > .position > span:last-child {
+			border-right: none;
+		}
+
+		#cv .row > .details > .position > span {
+			display: inline-block;
+			border-right: 3px #black solid;
+			padding: 0 10px;
+		}
+
+	</style>
+</head>
+
+<body>
+	<div id="refbg"></div>
+
+	<div id="cv-header">
+		<img src="./photo.jpg" />
+
+		<p class="name">Ирина Нечитайло</p>
+		<p class="position"><span>Проектировщик интерфейсов</span></p>
+		<p class="location"><span>Одесса, Украина</span></p>
+		<p>&nbsp;</p>
+		<a href="mailto:iaarh17@gmail.com">iaarh17@gmail.com</a>
+		<a href="http://behance.net/iraspacecadet">behance.net/iraspacecadet</a>
+
+	</div>
+
+	<div id="cv">
+		<div class="row">
+			<div class="text">Дизайн — это моя профессия и образ мышления, поэтому интересуюсь и занимаюсь много чем: трехмерное моделирование (3DS Max), анимация (AE), иллюстрация, промдизайн, айдентика и конечно же интерфейсы, моё главное на сегодня увлечение — от проектирования взаимодействия и юзер экспириенса до рисования pixel perfect иконок под любые платформы.</div>
+		</div>
+
+		<div class="row">
+			<div class="type">ОПЫТ РАБОТЫ</div>
+
+			<div class="details">
+				<p class="title">MADSOFT</p>
+				<p class="position"><span>Проектировщик интерфейсов</span><span>Графический дизайнер</span></p>
+				<p class="subline"><span>Март 2017</span><span>Одесса, Украина</span></p>
+			</div>
+
+			<div class="details">
+				<p class="title">7-40</p>
+				<p class="position"><span>Старший дизайнер</span><span>Проектировщик интерфейсов</span></p>
+				<div class="text">
+					<ul>
+						<li>2 года работала над продуктом Avocadolist: UI/UX, вела документацию, следила за аналитикой и подготовкой приложения к обновлениям. На всех этапах работы общалась с разработчиками. Чтобы лучше понимать, как устроен продукт, начала изучать Objective-C и моим учителем был мой коллега.</li>
+						<li>С 2015 года  руководила командой дизайнеров: следила за дедлайнами, помогала справляться с творческим кризисом. Помогала дизайнерам осваивать новые инструменты:  After Effects,  Adobe Illustrator.</li>
+						<li>Сдела компании сайт и занималась его поддержкой до 2016 года. </li>
+					</ul>
+				</div>
+				<p class="subline"><span>Март 2014 &mdash; Декабрь 2016</span><span>Одесса, Украина</span></p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="type">ОБРАЗОВАНИЕ</div>
+
+			<div class="details">
+				<p class="title">Школа стажеров Бюро Артёма Горбунова</p>
+				<div class="text">
+					<p>В школе изучаю фундаментальные дисциплины дизайна:
+						<ul>
+							<li>Информация и интерфейс</li>
+							<li>Типографика и вёрстка</li>
+							<li>Переговоры и отношения</li>
+							<li>Дизайн и право</li>
+							<li>Текст и редактура</li>
+							<li>Управление и результаты ФФФ</li>
+						</ul>
+					</p>
+				</div>
+				<p class="subline"><span>Август 2017</span><span>Одесса, Украина</span></p>
+			</div>
+
+			<div class="details">
+				<p class="title">Дизайн-практикум студии Артемия Лебедева</p>
+				<div class="text">
+					<p>В Августе 2015 года учавствовала в Одесском практикуме проводимым студией Артемия Лебедева и получила свой первый опыт в промышленном дизайне.</p>
+				</div>
+				<p class="subline"><span>Август 2015 &mdash; Январь 2016</span><span>Одесса, Украина</span></p>
+			</div>
+
+			<div class="details">
+				<p class="title">Школа монстров студии Simpals</p>
+				<div class="text">
+					<p>Прошла годовой курс компьютеной графики от Молдавской киностуции. За время обучения я узнала как делаются мультики, получила основы использования фотошопа и точно определилась со своим призванием.</p>
+				</div>
+				<p class="subline"><span>Август 2010 &mdash; Январь 2011</span><span>Кишинёв, Молдова</span></p>
+			</div>
+		</div>
+	
+	<div class="row">
+		<div class="type">Хобби</div>
+
+		<div class="details">
+			<div class="text">
+				<p>Я наслаждаюсь каждым днем своей жизни и не трачу время на изучение чего-то одного. Для этого у меня есть профессиональные задачи, где я готова и хочу тратить время на глубокое изучение дисциплин. А свободное время использую для знакомства с новыми и захватывающими вещами.</p>
+				<p>Я люблю кино и мне стало интересно как его создают. Я прочла книгу «Кино без бюджета» Роберта Родригеса и уже не смогла оставить без внимания эту тему. За одно лето я сделала 3-х минутное видео, в котором снимала танцовщиц на хромакее, ходила с камерой и стадикомом по злачным местам Одессы, рисовала раскадровку и много еще интересного. Научилась монтировать, делать привязку трехмерных объектов, стабилизировать и обрабатывать видео...</p>
+				<p>На результат можно посмотреть</p>
+				<p>Получаю удовольствие, когда получается спланировать много дел. Люблю готовить и могу приготовить традиционные блюда из пяти разных кухнь. Экономлю время там, где многие этого не делают: заморажевую еду, продумываю удобство использование вещей в своем доме, хожу за покупками 1 раз в месяц и точно знаю, что мне нужно купить и что и когда заканчивается.</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="type">Навыки</div>
+
+		<div class="details">
+			<div class="text">
+				<p><b>After Effects, Photoshop, Illustrator, IOS, Android, Product Design, Prototyping, UI, User Testing, Ux, Wireframing, 3DS Max, Marvel, Axure, Zeplin</b></p>
+			</div>
+		</div>
+	</div>
+
+	</div>
+
+</body>
+
+</html>
