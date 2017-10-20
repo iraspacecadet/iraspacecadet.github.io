@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+	<style type="text/css">
+		body {
+
+			font-family: 'Open Sans', Helvetica, sans-serif;
+		}
+
+		#refbg {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			background: url('./резюме.png');
+			opacity: 0.35;
+			left: 0px;
+			top: 0px;
+
+			display:none;
+		}
+
+		#cv-header {
+			width: 1070px;
+			position: relative;
+			left: 50%;
+			margin-left: -535px;
+			margin-top: 180px;
+			padding: 0 0 60px 0;
+		}
+
+		#cv-header p {
+			margin-bottom: 0px;
+			margin-top: 0px;
+		}
+
+		#cv-header .greeting {
+			font-size: 26px;
+			font-family: 'Noto Serif', serif;
+            font-style: italic;
+            color: #df346c;
+		}
+
+        #cv-header .intro {
+			font-size: 20px;
+			color: #525252;
+            margin-top: 15px;
+		}
+
+		#cv-header .position {
+			font-size: 18px;
+		}
+
+		#cv-header .location {
+			font-size: 14px;
+            margin-top: 5px;
+		}
+		
+		#cv-header a {
+			display: inline-block;
+			color: #0057ff;
+			font-size: 14px;
+			text-decoration: none;
+			line-height: 1.4;
+			border-bottom: 1px rgba(0, 0, 250, 0.15) solid;
+		}
+
+		#cv-header > img {
+			display: block;
+			float: left;
+            border: 5px #df346c solid;
+		}
+
+		#cv-header > .lines {
+			display: block;
+			width: 555px;
+			float: right;
+			margin-top: -12px;
+		}
+
+		.clear {clear: both;}
+
+		#cv {
+			width: 1070px;
+			left: 50%;
+			margin-left: -535px;
+			position: relative;
+		}
+
+		#cv .row {
+			/*border-top: 1px #333 solid;
+			padding: 8px 0 65px 0;
+			width: 100%;
+            color: #202020;*/
+            margin-bottom: 93px;
+		}
+
+		#cv .row > p {}
+
+		#cv .row > .type {
+			height: 100%;
+			font-size: 53px;
+			padding: 17px 0px 23px 0px;
+			letter-spacing: 0.03em;
+			font-weight: bold;
+		}
+
+		#cv .row > .details p {
+			margin: 0;
+			padding: 0;
+			margin-bottom: 13px;
+		}
+
+		#cv .row > .details {
+			padding: 7px 0 10px 0;
+			/*border-bottom: 1px solid #b7b7b7;*/
+            margin-bottom: -2px;
+		}
+
+		#cv .row.works > .details {
+			margin-bottom: 60px;
+		}
+
+
+		#cv .row > .details:last-child {
+			border-bottom: none;
+		}
+		
+		#cv .row > .details > .title,
+        #cv .row > .details > .work-title {
+			font-size: 34px;
+			font-weight: bold;
+            color: #585858;
+            margin-top: 12px;
+		}
+		#cv .row > .details > .title a {
+			margin: 0;
+			font-weight: bold;
+			color: #0057ff;
+			text-decoration: none;
+			border-bottom: none;
+			border-bottom: 1px rgba(0, 0, 250, 0.15) solid;
+
+		}
+		#cv .row > .details > .title a:hover {
+			border-bottom: 1px rgba(0, 0, 250, 0.25) solid;
+
+		
+		}
+		#cv .row > .details > .position {
+			font-size: 24px;
+		}
+
+		#cv .row .text {
+			font-size: 18px;
+			line-height: 27px;
+		}
+
+		#cv .row .text a {
+			display: inline-block;
+			color: #0057ff;
+			text-decoration: none;
+			line-height: 1.6;
+			border-bottom: 1px rgba(0, 0, 250, 0.15) solid;
+		}
+
+		#cv .row .text li {
+			margin-bottom: 10px;
+		}
+
+		#cv .row > .details > .subline {
+			font-size: 18px;
+			color: #b7b7b7;
+		}
+
+		#cv .row > .details > .subline > span {
+			display: inline-block;
+			border-right: 1px #b7b7b7 solid;
+			padding: 0 10px;
+		}
+
+		#cv .row > .details > .subline > span:first-child {
+			padding-left: 0;
+		}
+
+		#cv .row > .details > .subline > span:last-child {
+			border-right: none;
+		}
+
+		#cv .row > .details > .position > span {
+			display: inline-block;
+			border-right: 1px black solid;
+			padding: 0 10px;
+		}
+
+		#cv .row > .details > .position > span:first-child {
+			padding-left: 0;
+		}
+
+		#cv .row > .details > .position > span:last-child {
+			border-right: none;
+		}
+
+		#cv .row > .details > .position > span {
+			display: inline-block;
+			border-right: 3px #black solid;
+			padding: 0 10px;
+		}
+
+	</style>
+</head>
+
+<body>
+	<div id="refbg"></div>
+
+	<div id="cv-header">
+		<img src="./photo2.jpg" />
+
+		<div class="lines">
+			<p class="greeting">Привет, меня зовут<br/><span class="name">Ира Нечитайло</span></p>
+			<p class="intro">С 2014 года проектирую и оформляю мобильные и веб-интерфейсы. С удовольствием отвлекаюсь на брендинговую продукцию и анимацию. Могу спроектировать, замоделить, нарисовать, сверстать и быстро научиться новому.</p>
+			<p class="location"><span>Одесса, Украина</span></p>
+			<p>&nbsp;</p>
+			<a href="mailto:iaarh17@gmail.com">iaarh17@gmail.com</a>
+			<br/>
+			<a href="http://behance.net/iraspacecadet">behance.net/iraspacecadet</a>			
+		</div>
+		<div class="clear"></div>
+	</div>
+
+	<div id="cv">
+		<div class="row">
+			<div class="type">Опыт работы</div>
+
+			<div class="details">
+				<p class="title">MadSoft</p>
+				<p class="position"><span>Проектировщик интерфейсов</span><span>Графический дизайнер</span></p>
+				<p class="subline"><span>Март 2017</span><span>Одесса, Украина</span></p>
+			</div>
+
+			<div class="details">
+				<p class="title"><a href="http://7-40.org/">7-40</a></p>
+				<p class="position"><span>Старший дизайнер</span><span>Проектировщик интерфейсов</span></p>
+				<div class="text">
+					<ul>
+						<li>2 года работала над продуктом Avocadolist: UI/UX, вела документацию, следила за аналитикой и готовила к обновлениям. На всех этапах работы общалась с разработчиками. Чтобы лучше понимать, как устроен продукт, попросила коллег провести мне вводный курс по Objective-C.</li>
+						<li>С 2015 года  руководила командой дизайнеров: следила за дедлайнами, помогала справляться с творческим кризисом. Помогала дизайнерам осваивать новые инструменты:  After Effects,  Adobe Illustrator.</li>
+						<li>Сделала компании сайт и занималась его поддержкой до 2016 года. </li>
+                    </ul>
+                </div>
+				<p class="subline"><span>Март 2014 &mdash; Декабрь 2016</span><span>Одесса, Украина</span></p>
+            </div>
+        </div>
+        
+        <div class="row works">            
+            <div class="type">Работы</div>
+            <div class="details">
+                    <img src="images/740.gif" alt="7-40" width=/>
+				<p class="work-title">Корпоративный сайт дизайн студии 7-40</p>
+				<div class="text">
+                    <p>7-40 — небольшая компания в Одессе, где я работала UI/UX дизайнером. Моей задачей было сделать узнаваемый сайт с легким обновлением контента. Мой любимый эллемент интерфейса — навигация по разделам главных страниц через svg из цифр названия студии. Они векторные, анимированные, кликабельные и крутые.    </p>
+                    <p><a href="https://www.behance.net/gallery/49243299/7-40-Digital-Design">Подробная презентация проекта на Behance</a></p>
+				</div>
+				<p class="subline"><span>Ноябрь 2015</span></p>
+            </div>
+            
+            <div class="details">
+                    <img src="images/avocadolist.png" alt="Avocadolist" width=/>
+                    <p class="work-title">Avocadolist — приложение списка покупок</p>
+                    <div class="text">
+                        <p>На этом проекте я была ведущим дизайнером. Руководила командой дизайнеров, обсуждала правки с разработчиками и следила за порядком обновлений. Проектировала и оформляла интерфейс. Делала рекламную продукцию: презентационное видео и банеры. Не вела аналитику, но за ней следила. </p>
+                        <p><a href="https://www.behance.net/gallery/51222659/Avocadolist">Подробная презентация проекта на Behance</a></p>
+                    </div>
+                    <p class="subline"><span>Март 2014 — Ноябрь 2016</span></p>
+                </div>
+		</div>
+	</div>
+
+</body>
+
+</html>
